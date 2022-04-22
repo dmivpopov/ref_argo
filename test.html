@@ -1,8 +1,7 @@
-update ref Fri Apr 22 13:30:35 MSK 2022 <br>
+update ref Fri Apr 22 13:33:45 MSK 2022 <br>
 ---- <br>
 BACK <br>
 scheduler <br>
-Annotations:	kubectl.kubernetes.io/last-applied-configuration={"apiVersion":"build.openshift.io/v1","kind":"BuildConfig","metadata":{"annotations":{},"labels":{"app":"gpnsm-back","argocd.argoproj.io/instance":"test-backend-scheduler","label":"gpnsm","service":"scheduler"},"name":"scheduler","namespace":"test"},"spec":{"failedBuildsHistoryLimit":1,"nodeSelector":null,"output":{"pushSecret":{"name":"nexus-gpnsm"},"to":{"kind":"DockerImage","name":"gpnsm.nexus.okd.local:5000/test/scheduler:latest"}},"resources":{"limits":{"cpu":"5","memory":"5Gi"},"requests":{"cpu":"500m","memory":"500Mi"}},"runPolicy":"SerialLatestOnly","source":{"git":{"ref":"feature/GPNOIL-5011","uri":"git@git.grotem.com:GPNLubricants/Backend.git"},"sourceSecret":{"name":"grotem-git-openshift-builder"},"type":"Git"},"strategy":{"dockerStrategy":{"dockerfilePath":"docker/Dockerfile","env":[{"name":"TZ","value":"Europe/Moscow"},{"name":"APP","value":"GPNSM.Scheduler"},{"name":"NEXUS_URL","value":"http://nexus.okd.local/repository/nuget-group/"},{"name":"PATH_BASE","value":"/scheduler-api"},{"name":"NEXUS_PASS","valueFrom":{"secretKeyRef":{"key":"NEXUS_PASS","name":"nexus-nuget"}}}],"pullSecret":{"name":"nexus-docker"}},"type":"Docker"},"successfulBuildsHistoryLimit":2,"triggers":[]}}
 Ref:			feature/GPNOIL-5011
 bitrixintegrationwebapi <br>
 Ref:			feature/GPNOIL-5011
@@ -10,43 +9,43 @@ clientwebapi <br>
 Ref:			feature/GPNOIL-5011
 confwebapi<br>
 Ref:			feature/GPNOIL-5011
-distribwebapi
+distribwebapi <br>
 Ref:			feature/GPNOIL-5011
-filestoragewebapi
+filestoragewebapi <br>
 Ref:			feature/GPNOIL-5011
-fiftyfiftywebapi
+fiftyfiftywebapi <br>
 Ref:			feature/GPNOIL-5011
-gpnwebapi
+gpnwebapi <br>
 Ref:			feature/GPNOIL-5011
-kpiwebapi
+kpiwebapi <br>
 Ref:			feature/GPNOIL-5011
-loginwebapi
+loginwebapi <br>
 Ref:			feature/GPNOIL-5011
-productwebapi
+productwebapi <br>
 Ref:			feature/GPNOIL-5011
-profilewebapi
+profilewebapi <br>
 Ref:			feature/GPNOIL-5011
-promowebapi
+promowebapi <br>
 Ref:			feature/GPNOIL-5011
-reportingwebapi
+reportingwebapi <br>
 Ref:			feature/GPNOIL-5011
-saleswebapi
+saleswebapi <br>
 Ref:			feature/GPNOIL-5011
-visitwebapi
+visitwebapi <br>
 Ref:			feature/GPNOIL-5011
-notificatorwebapi
+notificatorwebapi <br>
 Ref:			feature/GPNOIL-5011
-profilewebapi
+profilewebapi <br>
 Ref:			feature/GPNOIL-5011
------
-FRONT
-sso
+----- <br>
+FRONT <br>
+sso <br>
 Ref:			release
-sfa
+sfa <br>
 Ref:			release
-marketing
+marketing <br>
 Ref:			release
-distributor
+distributor <br>
 Ref:			release
-administration
+administration <br>
 Ref:			release
