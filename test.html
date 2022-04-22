@@ -1,9 +1,10 @@
-Обновлено Fri Apr 22 13:22:01 MSK 2022
-----
-BACK
-scheduler
+update ref Fri Apr 22 13:26:25 MSK 2022
+----<br>
+BACK<br>
+scheduler<br>
+Annotations:	kubectl.kubernetes.io/last-applied-configuration={"apiVersion":"build.openshift.io/v1","kind":"BuildConfig","metadata":{"annotations":{},"labels":{"app":"gpnsm-back","argocd.argoproj.io/instance":"test-backend-scheduler","label":"gpnsm","service":"scheduler"},"name":"scheduler","namespace":"test"},"spec":{"failedBuildsHistoryLimit":1,"nodeSelector":null,"output":{"pushSecret":{"name":"nexus-gpnsm"},"to":{"kind":"DockerImage","name":"gpnsm.nexus.okd.local:5000/test/scheduler:latest"}},"resources":{"limits":{"cpu":"5","memory":"5Gi"},"requests":{"cpu":"500m","memory":"500Mi"}},"runPolicy":"SerialLatestOnly","source":{"git":{"ref":"feature/GPNOIL-5011","uri":"git@git.grotem.com:GPNLubricants/Backend.git"},"sourceSecret":{"name":"grotem-git-openshift-builder"},"type":"Git"},"strategy":{"dockerStrategy":{"dockerfilePath":"docker/Dockerfile","env":[{"name":"TZ","value":"Europe/Moscow"},{"name":"APP","value":"GPNSM.Scheduler"},{"name":"NEXUS_URL","value":"http://nexus.okd.local/repository/nuget-group/"},{"name":"PATH_BASE","value":"/scheduler-api"},{"name":"NEXUS_PASS","valueFrom":{"secretKeyRef":{"key":"NEXUS_PASS","name":"nexus-nuget"}}}],"pullSecret":{"name":"nexus-docker"}},"type":"Docker"},"successfulBuildsHistoryLimit":2,"triggers":[]}}
 Ref:			feature/GPNOIL-5011
-bitrixintegrationwebapi
+bitrixintegrationwebapi<br>
 Ref:			feature/GPNOIL-5011
 clientwebapi
 Ref:			feature/GPNOIL-5011
